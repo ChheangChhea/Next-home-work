@@ -8,13 +8,13 @@ export const metadata={
 
 //get data from API
 export async function getData() {
-  const Resources = await fetch('https://api.escuelajs.co/api/v1/products?limit=20&offset=1');
+  const Resources = await fetch('https://api.escuelajs.co/api/v1/products?limit=20&offset=1' , {cache:"no-store"});
   const data =await Resources.json()
   return data;
 }
 export default async function Home() {
   const products=await getData()
-  console.log(products)
+  // console.log(products)
 
   return (
     <main className="flex min-h-screen flex-wrap items-center justify-between p-24">

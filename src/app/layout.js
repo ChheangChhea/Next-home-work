@@ -4,6 +4,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Card from '@/components/Card'
+import Profil from '@/components/Profil'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,10 +18,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <NavBar/>
+        <Profil/>
         {children}
         <Footer/>
         {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></Script> */}
-    
         </body>
     </html>
   )

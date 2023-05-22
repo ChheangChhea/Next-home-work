@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import Link from "next/link";
@@ -108,6 +109,7 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
+    
     </nav>
   );
 }

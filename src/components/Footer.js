@@ -7,7 +7,7 @@ export default function Footer() {
   const pathname = usePathname();
 
   if (pathname.includes("dashboard")) return null;
-
+  
 
 
   return (

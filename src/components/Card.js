@@ -3,14 +3,16 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Profil from "./Profil";
 
-export default function Card({ title, image, description, price, id }) {
+export default function Card({ title, image,  price, id }) {
   const router = useRouter();
   return (
     <div
+   
 
-      className="shrink-0 my-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-    >
+      className="shrink-0 my-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      
       <Link href={`/products/${id}`}>
         <img
           className="p-8 rounded-t-lg"
