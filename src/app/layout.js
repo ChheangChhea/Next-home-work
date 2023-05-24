@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 /* eslint-disable react/jsx-no-undef */
 import NavBar from '@/components/NavBar'
 import './globals.css'
@@ -18,10 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <NavBar/>
-        <Profil/>
         {children}
         <Footer/>
-        {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></Script> */}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
         </body>
     </html>
   )

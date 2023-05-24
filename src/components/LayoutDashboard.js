@@ -1,11 +1,11 @@
-import React from 'react'
-import SideBar from './SideBar'
+import React from "react";
+import SideBar from "./SideBar";
 
-export default function LayoutDashboard({children}) {
+export default function LayoutDashboard({ children }) {
   return (
     <div>
-       <SideBar/>
-       {children}
+      <SideBar />
+      {children}
     </div>
-  )
+  );
 }

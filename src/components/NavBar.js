@@ -9,18 +9,18 @@ export default function NavBar() {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://istad.co/" className="flex items-center">
+        <Link href="https://istad.co/" className="flex items-center">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAA1VBMVEVHcEz//gBgV4GHbJd7ZXXMnEt3aHuxiFpsW3x+Z3ZpXH2XfW6weVCOdm8cPJjiHif///7iAQNodrKFj77hEh4CKJHoGxx3g7kpRZ0LM5autNP98+9WZ6xdM4Pc3+yepcpLXKVKSoW3vtlvMnyUnMX2+f35z8/63dz+898AGoc1TKDmU1jpaGvKv7vvm53r7fY0Pov//u70tLVfWYX96ca4rrXqe33mOTzsiInvuV784LaMhZvoqDjFyd+rq8QjLYLtslL0yodxO4Hqpyqgmqn25s7s6OuBXCwIAAAADnRSTlMADfn+j03fYN2uu7JMgF9nRoUAAAJXSURBVCiRbVNpc6JAEEUhUbMJNDOyA8ws13IjhyDelpqk8v9/0jLoxljJ4wM90119zXuCcMNgJE2enibSaCD8hNG4ShkimOn4+Dj65n4QdWT7hCBmI2Iiefhw758Y2Mep0+zadtckBsZY+/XVP5ZtbLj5HMogKGGeu45tao9f/R5xcgg861CWlmdakCfOQX685T+kbhyYJViebXduyy5jVzf1a5VnzXTceeCBp2uaYWia7oEFc5f48qXTIcZJXAbgaPIVmgOlFSeYDPv5ZVPLSwt0Q/6EoQdW0Do24vsYE9sFMxD/9nh9vfzFwIQKo67PQeXLbWCF6u8O6oqGs4sVHqxWt6uB8Jz6TuwF2VRRpqtlpKzq5YrbWfARpQf9QZAYPnZNq93dLFKj9bqYRrMuQgUTjpi9CBIiDXhRH1AviyzL1nUfEHngEiYJT+KugS0PUFZRsS5qtaD8oIZbaHbiRJAc1MT7PsNyWYRZVhezZZ9hHzcslfoe5vuYB2S0oJSGa9qXiPfzo++8CM+yn8SbBb+bKlmoqMVM6adYbD4Sr5tiUOG03W6ue1BotLruYbNtU74HYYyQC6dY/HMHMT5BRfgmhZFhGvn2jd6/BX3btoYv99wcMpTQ84ay22syujnTxEfDCx9k33HhfFrc+LA4naFC//kgTGS7Y8xiv6CWafueBdx0Hax/8nacmizJAeo6qiEM18A5aaZ3rLWJxlkNYffFuathW/7i51WQT9Kk2b2/d7qQUSedO110yhoaCPuEIcQwJuSbsi7a1Bnj4kurH7TJ8aO6/wF0WFhksoV40gAAAABJRU5ErkJggg=="
             className="h-8 mr-3"
             alt="ISTAD Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-          ISTAD
+            ISTAD
           </span>
-        </a>
+        </Link>
         <div className="flex md:order-2">
           <button
             type="button"
@@ -109,7 +109,6 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
-    
     </nav>
   );
 }
