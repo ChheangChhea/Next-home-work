@@ -30,5 +30,5 @@ export default async function Profil({ name, avatar }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
